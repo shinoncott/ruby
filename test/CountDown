@@ -1,0 +1,45 @@
+require 'date'
+
+now=Time.now
+
+#対象日時
+Target1=Time.new(2023, 11, 25, 18, 30, 0, "+09:00")
+
+#puts now 
+#puts target
+
+#引き算は秒で表示
+Diff1=Target1-now
+#日数
+D1=Diff1.div(60*60*24)
+
+#時間
+temp=Diff1.modulo(60*60*24) 
+H1=temp.div(60*60)
+
+#分
+temp=temp.modulo(60*60) 
+M1=temp.div(60)
+
+#秒
+temp=temp.modulo(60*60) 
+S1=temp.div(60) 
+
+#ミリ秒
+MS1=temp-S1
+
+puts D1
+
+#puts '共通テストまで残り'+ D1 +'日' #,H1,M1,S1,MS1
+
+
+#puts ((target-now).div(60*60*24)) #残り日数
+
+
+
+#puts Date.today
+#puts (time.new(2024,1,13 08:30:00)-Date.today).numerator
+
+#puts now
+#puts now.year 
+#puts now.day

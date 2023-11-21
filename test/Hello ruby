@@ -1,0 +1,8 @@
+require 'date'
+
+puts "Hello Ruby"
+now=Time.now
+
+puts now
+puts now.year 
+puts now.day
